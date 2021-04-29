@@ -1,0 +1,16 @@
+.custom-filter-warehouse-sfa {
+    min-width: 400px;
+
+    .tomoni-base-select {
+        min-width: 200px;
+    }
+
+    .search-input {
+        min-width: 200px;
+    }
+
+    @media screen and (max-width: 767px) {
+        flex-direction: column;
+        min-width: unset;
+    }
+}

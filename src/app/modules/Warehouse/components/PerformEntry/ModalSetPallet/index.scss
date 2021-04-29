@@ -1,0 +1,45 @@
+.custom-modal-add-pallet {
+    .pallet-lists-in-modal {
+        
+    }
+
+    .pallet-item {
+        background: #f5f5f5;
+
+        &--info {
+            flex-grow: 1;
+        }
+
+        &--id {
+            font-weight: 600;
+            font-size: 20px;
+        }
+
+        &--quantity_box {
+            font-size: 12px;
+        }
+    }
+
+    .select-pallet-type {
+        min-width: 200px;
+    }
+
+    .progress-pallet {
+        display: flex;
+        align-items: center;
+        margin: -5px;
+        margin-top: 10px;
+
+        &--item {
+            width: 50%;
+            display: flex;
+            align-items: center;
+            padding: 5px 10px;
+
+            .progress {
+                width: 100%;
+                margin-left: 10px;
+            }
+        }
+    }
+}

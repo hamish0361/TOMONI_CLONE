@@ -1,0 +1,66 @@
+.box-list-for-select {
+    height: 100%;
+    padding: 3px;
+    background: #f0f0f0;
+
+    &__item {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        background: #fff;
+        padding: 5px;
+        font-size: 16px;
+        cursor: pointer;
+        height: 40px;
+        padding-right: 15px;
+
+        &:not(:first-child) {
+            margin-top: 3px;
+            padding-top: 3px;
+        }
+    }
+
+    .suggest-shipment {
+        margin-right: 3px;
+        font-size: 12px;
+        text-transform: uppercase;
+        font-weight: 600;
+    }
+
+    .check-section {
+        .form-control {
+            width: 16px;
+            height: 16px;
+            cursor: pointer;
+        }
+    }
+
+    &__head {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        font-size: 14px;
+
+        .base-switch__label {
+            text-transform: uppercase;
+            font-weight: 500;
+        }
+    }
+
+    &__selectAll {
+        display: flex;
+        align-items: center;
+        white-space: nowrap;
+
+        input.form-control {
+            width: 16px;
+            height: 16px;
+            cursor: pointer;
+            margin: 5px;  
+        }
+
+        label {
+            margin-bottom: 0;
+        }
+    }
+}

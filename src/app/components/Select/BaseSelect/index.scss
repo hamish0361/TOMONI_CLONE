@@ -1,0 +1,7 @@
+.is-invalid {
+    .tomoni-base-select {
+        [class*="control"] {
+            border-color: #f5222d;
+        }
+    }
+}

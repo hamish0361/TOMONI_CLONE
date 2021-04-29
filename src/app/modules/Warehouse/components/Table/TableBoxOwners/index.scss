@@ -1,0 +1,28 @@
+.table-box-owners {
+    .w-400 {
+        max-width: 400px;
+    }
+
+    .ovf-ellipsis {
+        display: block;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+    }
+
+    .quantity-box {
+        max-width: 150px;
+        min-width: 100px;
+    }
+
+    .product-name {
+        min-width: 200px;
+    }
+
+    .ediable-text {
+        padding: 7px;
+        background: #f0f0f0;
+        border: 1px solid #d8d8d8;
+        border-radius: 3px;
+    }
+}

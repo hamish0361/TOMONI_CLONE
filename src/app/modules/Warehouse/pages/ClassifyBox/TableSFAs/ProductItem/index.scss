@@ -1,0 +1,29 @@
+.product-item {
+    &__title {
+        position: relative;
+        color: #595959;
+        font-weight: 600;
+        font-size: 14px;
+
+        &::after {
+            position: absolute;
+            top: 50%;
+            left: 50px;
+            right: 0;
+            content: '';
+            height: 1px;
+            background: #595959;
+        }
+    }
+
+    &__item {
+        font-size: 14px;
+        font-weight: 600;
+        display: flex;
+
+        &:not(:last-child)::before {
+            content: '-';
+            margin-right: 10px;
+        }
+    }
+}

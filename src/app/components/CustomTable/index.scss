@@ -1,0 +1,11 @@
+.tmn-custom-table {
+    &__wrapper {
+        overflow-x: auto;
+    }
+
+    input.form-control[type="checkbox"] {
+        width: 16px;
+        height: 16px;
+        cursor: pointer;
+    }
+}

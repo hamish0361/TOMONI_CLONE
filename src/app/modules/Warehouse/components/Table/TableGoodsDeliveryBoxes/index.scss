@@ -1,0 +1,23 @@
+.table-list-box-in-goods-delivery {
+    .MuiTableCell-root {
+        font-size: 14px;
+        white-space: nowrap;
+    }
+
+    .ediable-text {
+        padding: 5px 10px;
+        background: #f0f0f0;
+        border: 1px solid #bfbfbf;
+        border-radius: 5px;
+        max-width: 120px;
+    }
+
+    .sku-title {
+        font-size: 20px;
+        padding: 0;
+    }
+
+    .outbound-picker-status {
+        font-weight: 600;
+    }
+}

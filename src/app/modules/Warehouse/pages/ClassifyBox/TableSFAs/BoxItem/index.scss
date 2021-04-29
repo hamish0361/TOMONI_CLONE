@@ -1,0 +1,126 @@
+.order-box-item {
+    &.card .card-body {
+        padding: 0;
+        display: flex;
+    }
+
+    .section-box {
+        flex-grow: 1;
+        padding: 10px;
+    }
+
+    &__head {
+        display: flex;
+        align-items: center;
+        cursor: pointer;
+
+        &:hover {
+            .order-box-item__title {
+                color: #1890ff;
+                font-weight: 500;
+            }
+
+            .redirect-icon {
+                left: 50%;
+            }
+        }
+    }
+
+    &__title {
+        font-size: 28px;
+    }
+
+    .redirect-icon {
+        position: absolute;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        transition: all 0.5s;
+        user-select: none;
+    }
+
+    .redirect-wrapper {
+        flex-grow: 1;
+        position: relative;
+        margin-left: 20px;
+        display: flex;
+        height: 42px;
+    }
+
+    &__propertyItem {
+        display: flex;
+        align-items: center;
+        font-size: 14px;
+
+        .propertyItem {
+            &__label {
+                color: #8c8c8c;
+            }
+
+            &__value {
+                font-weight: 600;
+                margin-left: 10px;
+            }
+        }
+
+        &.shipment_method {
+            position: relative;
+
+            .propertyItem {
+                &__value {
+                    font-size: 32px;
+                    text-transform: uppercase;
+                    position: absolute;
+                    right: 10px;
+                    bottom: 0;
+                    line-height: 32px;
+                }
+            }
+        }
+    }
+
+    &__owners {
+        min-width: 250px;
+        background: #e6f7ff;
+        padding: 15px;
+        overflow: auto;
+    }
+
+    .owner-box-item {
+        display: flex;
+        align-items: center;
+
+        &__orderObj {
+            background: #389e0d;
+            padding: 3px 5px;
+            font-weight: 600;
+            color: #fff;
+            font-size: 12px;
+            border: 2px solid #fff;
+            border-radius: 3px;
+        }
+
+        &__quantity {
+            background: #f5222d;
+            padding: 3px 5px;
+            font-weight: 600;
+            color: #fff;
+            font-size: 12px;
+            border: 2px solid #fff;
+            border-radius: 3px;
+        }
+
+        &:not(:first-child) {
+            margin-top: 5px;
+        }
+    }
+
+    @media screen and (max-width: 767px) {
+        .section-owners {
+            display: none;
+        }
+    }
+}

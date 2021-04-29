@@ -1,0 +1,48 @@
+.card-hide {
+    display: none;
+    transition: all 0.5s;
+}
+
+.product-item {
+    &:hover {
+        cursor: pointer;
+        opacity: 0.8;
+    }
+}
+
+.product-item-select {
+    position: relative;
+
+    .button-delete {
+        position: absolute;
+        top: 4px;
+        right: 18px;
+    }
+}
+
+.owner-tooltip {
+    min-width: 240px;
+
+    .tooltip-inner {
+        max-width: none;
+    }
+}
+
+.owner-list {
+    .owner-item {
+        display: flex;
+        min-width: 200px;
+        align-items: center;
+        justify-content: space-between;
+        font-size: 16px;
+
+        + .owner-item {
+            border-top: 1px solid #d8d8d8;
+        }
+
+        .owner-quantity {
+            font-weight: 600;
+            color: #1bc5bd;
+        }
+    }
+}
